@@ -24,3 +24,7 @@ ax.set_zlabel("sum_error : sum of errors")
 surf = ax.scatter(MAPs[0], MAPs[1], MAPs[2])
 plt.show()
 
+
+
+
+
