@@ -24,3 +24,13 @@ ax.set_zlabel("sum_error : sum of errors")
 surf = ax.scatter(MAPs[0], MAPs[1], MAPs[2])
 plt.show()
 
+fig = plt.figure(figsize=(10,15))
+X, Y = np.meshgrid(MAPs[0],MAPs[1])
+Z = np.array([MAPs[2]])
+ax = fig.add_subplot(111, projection='3d')
+ax.set_xlabel("n : total number of days in the train/test cycle")
+ax.set_ylabel("p : % train / test")
+ax.set_zlabel("sum_error : sum of errors")
+surf = ax.plot_surface(X, Y, Z)
+plt.show()
+
